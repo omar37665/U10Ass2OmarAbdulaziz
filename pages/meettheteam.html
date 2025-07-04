@@ -10,7 +10,7 @@
     <header class="header">
       <nav class="navbar2">
         
-        <h2 class="logo"><a href="index.html">Hot Beans</a></h2> 
+        <h2 class="logo"><a href="../index.html">Hot Beans</a></h2> 
      
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" id="hamburger-btn">
@@ -19,39 +19,54 @@
           </svg>
         </label>
         <ul class="links">
-          <li><a href="pages/meettheteam.html" class="meettheteam">Meet The Team</a></li>
+         <li><a href="pages/meettheteam.html" class="meettheteam">Meet The Team</a></li>
           <li><a href="pages/vacancies.html" class="vacancies">Vacancies</a></li>
           <li><a href="pages/apply.html" class="apply">Apply</a></li>
           <li><a href="pages/courses.html" class="courses">Courses</a></li>
           <li><a href="pages/info.html" class="info">Information</a></li>
         </ul>
         <div class="navbar">
-          <div class="buttons">
-              <a href="#" class="search" id="search-btn">Search</a>
-              <input type="text" id="search-input" class="search-input" placeholder="Search..." />
-          </div>
-      </div>
-      <script src="scripts/javascript.js"></script> <!-- Ensure correct path -->
+            <div class="buttons">
+                <a href="#" class="search" id="search-btn">Search</a>
+                <input type="text" id="search-input" class="search-input" placeholder="Search..." />
+            </div>
+        </div>
+        <script src="scripts/javascript.js"></script> <!-- Ensure correct path -->
       </nav>
       
       <div class="header-logo">
-     <img src="https://raw.githubusercontent.com/omar37665/U10Ass2OmarAbdulaziz/736be89ec1fec50c00256c0eeef1f70574502660/images/hbw.png" alt="hero image" />
+     <img src="https://raw.githubusercontent.com/omar37665/U15Ass2OmarAbdulaziz/refs/heads/main/images/logo_new-removebg-preview.png" alt="hero image" />
       </div>
       
     </header>
-    <section class="hero-section">
-      <div class="hero">
-        <h2>Welcome to Hot Beans Web!</h2>
-        <p>At Hot Beans Web, we don’t just build websites — we build futures. As a forward-thinking web development company, we specialize in creating responsive, user-focused digital solutions for clients across a wide range of industries. Our mission is to push the boundaries of what’s possible online — and that starts with the people behind the code.
-We’re currently looking to expand our talented development team and are on the lookout for passionate, cre ative, and ambitious individuals who want to make a real impact. Whether you’re a front-end enthusiast, a back-end specialist, or a full-stack problem solver, Hot Beans Web provides the perfect environment to grow your skills, work on exciting projects, and collaborate with a team that values innovation and teamwork.
-When you join Hot Beans Web, you become part of a supportive and inclusive culture that encourages learning, experimentation, and continuous improvement. From flexible working options and training opportunities to team-building activities and career progression paths, we make sure our developers have everything they need to succeed — and enjoy doing it.
-If you're ready to take the next step in your web development career, we’d love to hear from you. Join us at Hot Beans Web and help shape the future of the web, one project at a time.</p>
-      </div>
-      <div class="img">
-        <img src="https://png.pngtree.com/png-vector/20220302/ourmid/pngtree-charity-day-concept-black-handshake-silhouette-icon-on-white-background-vector-png-image_35550194.png" alt="hero image" />
-      </div>
+    <div class="container">
+        <div class="box light">
+            <h2>What we do</h2>
+            <p>Learn how we're fighting for the wellbeing of people in the slovak community. Read about the things we campaign for and the services we offer.</p>
+        </div>
+        <div class="box light">
+            <h2>Our impact</h2>
+            <p>Take a look at our information page to see what work we have completed and the impact it has had on people within our foundation. And learn what we got up to in the past year.</p>
+        </div>
+        <div class="box light">
+            <h2>Our achievements</h2>
+            <p>For over 60 years, The Slovak Aid Foundation has worked to improve the lives of people within the slovak community in all aspects no matter what struggle any individual may be going through. See what we've achieved.</p>
+        </div>
+        <div class="box dark">
+            <h2>Slovak Aid Foundation</h2>
+            <p>Slovak Aid Foundation is based in Manchester, England. We're working to make sure everyone within the slovak community in Manchester has access to the mental health information, support, and services they need. See what we're up to in Manchester.</p>
+        </div>
+        <div class="box dark">
+            <h2>Local Slovakians</h2>
+            <p>Local Slovakians support communities across England. Services include supported housing, crisis helplines, drop-in centres, employment schemes, counselling, and befriending.</p>
+        </div>
+        <div class="box dark">
+            <h2>How we raise and spend our money</h2>
+            <p>The Slovak Aid Foundation relies on donations. We're so grateful to everyone who supports us financially. That's why we're committed to being open about how we're funded and managed.</p>
+        </div>
+    </div>
       <div class="footer">
-  <p>Contact us for additional support at hotbeansweb@gmail.com</p>
+  <p>Contact us for additional support at slovakaidfoundation@gmail.com</p>
 </div>
       <style>
 .footer {
@@ -59,11 +74,12 @@ If you're ready to take the next step in your web development career, we’d lov
    left: 0;
    bottom: 0;
    width: 100%;
-   color: white;
+   color: white
+     ;
    text-align: center;
 }
         .header-logo {
-          margin-top: -90px;
+          margin-top: -80px;
         }  
  .logo {
      margin-bottom: -20px;
@@ -83,7 +99,7 @@ margin-left: 180px;
 body {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, #57A0D3 23%, #98fb98 95%);
+  background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
 }
 .header {
   position: fixed;
@@ -131,7 +147,6 @@ body {
 .navbar2 .buttons a:not(:last-child) {
   margin-right: 30px;
 }
-
 .navbar .buttons .search-input {
     width: 0;
     padding: 10px;
@@ -162,8 +177,6 @@ body {
     opacity: 1;
     visibility: visible;
 }
-
-
 .hero-section {
   display: flex;
   justify-content: space-evenly;
@@ -256,5 +269,60 @@ body {
   .hero-section img {
     display: none;
   }
+  </style>
+  <style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+}
+.box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.light {
+     background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
+}
+.dark {
+     background: linear-gradient(to bottom, #F0F8FF 23%, #96d9ff 95%);
+}
+h2 a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #333;
+}
  
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const searchBtn = document.getElementById("search-btn");
+  const searchInput = document.getElementById("search-input");
+
+  searchBtn.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevents jumping to the top
+      searchInput.classList.add("active");
+      searchInput.focus();
+      searchBtn.style.display = "none"; // Hide button when search bar appears
+  });
+
+  searchInput.addEventListener("blur", function () {
+      if (searchInput.value.trim() === "") {
+          searchInput.classList.remove("active");
+          searchBtn.style.display = "inline-block"; // Show button again if search bar is empty
+      }
+  });
+});
+    </script>

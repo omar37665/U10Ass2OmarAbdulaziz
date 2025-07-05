@@ -285,11 +285,13 @@ body {
 
 .team-card img {
   width: 100%;
-  height: 280px;
-  object-fit: cover;
+  height: 280px; /* consistent height */
+  object-fit: cover; /* crop to fill */
+  object-position: center top; /* adjust the crop focus */
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 
 .team-card h3 {
   font-size: 1.5rem;

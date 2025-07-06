@@ -39,57 +39,61 @@
       </div>
       
     </header>
+<h1 class="application-form">Application Form</h1>
+<form id="applicationform" class="form"> 
+  <p class="contact"><label for="name">Full Name</label></p> 
+  <input id="name" name="name" placeholder="First and last name" required type="text"> 
 
- <div  class="form">
-    		<form id="contactform"> 
-    			<p class="contact"><label for="name">Name</label></p> 
-    			<input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text"> 
+  <p class="contact"><label for="email">Email</label></p> 
+  <input id="email" name="email" placeholder="example@domain.com" required type="email"> 
 
-    			<p class="contact"><label for="email">Email</label></p> 
-    			<input id="email" name="email" placeholder="example@domain.com" required="" type="email"> 
+  <p class="contact"><label for="phone">Phone Number</label></p> 
+  <input id="phone" name="phone" placeholder="Mobile number" required type="text"> 
 
-                <p class="contact"><label for="username">Create a username</label></p> 
-    			<input id="username" name="username" placeholder="username" required="" tabindex="2" type="text"> 
+  <p class="contact"><label for="position">Position Applying For</label></p> 
+  <input id="position" name="position" placeholder="e.g., Web Developer" required type="text"> 
 
-                <p class="contact"><label for="password">Create a password</label></p> 
-    			<input type="password" id="password" name="password" required="" type="text"> 
-                <p class="contact"><label for="repassword">Confirm your password</label></p> 
-    			<input type="password" id="password" name="password" required="" type="text"> 
+  <p class="contact"><label for="cv">Link to Your CV (Google Drive, Dropbox, etc.)</label></p> 
+  <input id="cv" name="cv" placeholder="https://yourcv.com/link" type="url" required>
 
-               <fieldset>
-                 <label>Birthday</label>
-                  <label class="month"> 
-                  <select class="select-style" name="BirthMonth">
-                  <option value="">Month</option>
-                  <option  value="01">January</option>
-                  <option value="02">February</option>
-                  <option value="03" >March</option>
-                  <option value="04">April</option>
-                  <option value="05">May</option>
-                  <option value="06">June</option>
-                  <option value="07">July</option>
-                  <option value="08">August</option>
-                  <option value="09">September</option>
-                  <option value="10">October</option>
-                  <option value="11">November</option>
-                  <option value="12" >December</option>
-                  </label>
-                 </select>    
-                <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
-                <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
-              </fieldset>
+  <p class="contact"><label for="experience">Briefly Describe Your Experience</label></p> 
+  <textarea id="experience" name="experience" rows="4" placeholder="Share relevant work, projects, or skills..." required></textarea>
 
-            <select class="select-style gender" name="gender">
-            <option value="select">i am..</option>
-            <option value="m">Male</option>
-            <option value="f">Female</option>
-            <option value="others">Other</option>
-            </select><br><br>
+  <fieldset>
+    <label>Date of Birth</label>
+    <label class="month"> 
+      <select class="select-style" name="BirthMonth" required>
+        <option value="">Month</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>    
+    </label>
+    <label>Day <input class="birthday" maxlength="2" name="BirthDay" placeholder="DD" required></label>
+    <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="YYYY" required></label>
+  </fieldset>
 
-            <p class="contact"><label for="phone">Mobile phone</label></p> 
-            <input id="phone" name="phone" placeholder="phone number" required="" type="text"> <br>
-            <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit"> 	 
-   </form> 
+  <p class="contact"><label for="gender">Gender</label></p>
+  <select class="select-style gender" name="gender" required>
+    <option value="">Select...</option>
+    <option value="m">Male</option>
+    <option value="f">Female</option>
+    <option value="other">Other</option>
+    <option value="prefer_not">Prefer not to say</option>
+  </select><br><br>
+
+  <input class="buttom" name="submit" id="submit" value="Submit Application" type="submit"> 
+</form>
+
     
       <style>
 .footer {
@@ -292,56 +296,93 @@ body {
   .hero-section img {
     display: none;
   }
+  .application-form {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #010304;
+}
   </style>
   <style>
 
- .form {
-    background: #f1f1f1;
-    width: 470px;
-    padding: 20px 50px;
-    position: absolute; /* Allows precise positioning */
-    top: 50%; /* Moves the form down to the middle */
-    left: 50%; /* Moves the form to the center horizontally */
-    transform: translate(-50%, -50%); /* Adjusts position precisely to the center */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    border-radius: 5px; /* Optional: Rounds the edges */
+    .form {
+  background: #f1f1f1;
+  width: 470px;
+  padding: 20px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.form fieldset{border:0px; padding:0px; margin:0px;}
-.form p.contact { font-size: 12px; margin:0px 0px 10px 0;line-height: 14px; font-family:Arial, Helvetica;}
+.form p.contact {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: Arial, Helvetica;
+  margin-bottom: 10px;
+}
 
-.form input[type="text"] { width: 400px; }
-.form input[type="email"] { width: 400px; }
-.forminput[type="password"] { width: 400px; }
-.form input.birthday{width:60px;}
-.form input.birthyear{width:120px;}
-.form label { color: #000; font-weight:bold;font-size: 12px;font-family:Arial, Helvetica; }
-.form label.month {width: 135px;}
-.form input, textarea { background-color: rgba(255, 255, 255, 0.4); border: 1px solid rgba(122, 192, 0, 0.15); padding: 7px; font-family: Keffeesatz, Arial; color: #4b4b4b; font-size: 14px; -webkit-border-radius: 5px; margin-bottom: 15px; margin-top: -10px; }
-.form input:focus, textarea:focus { border: 1px solid #ff5400; background-color: rgba(255, 255, 255, 1); }
-.form .select-style {
-  -webkit-appearance: button;
-  -webkit-border-radius: 2px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  -webkit-padding-end: 20px;
-  -webkit-padding-start: 2px;
-  -webkit-user-select: none;
-  background-image: url(images/select-arrow.png), 
-    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
-  background-position: center right;
-  background-repeat: no-repeat;
-  border: 0px solid #FFF;
-  color: #555;
-  font-size: inherit;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;}
-.form .gender {
-  width:410px;
-    
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="url"],
+.form textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(122, 192, 0, 0.15);
+  padding: 7px;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+  color: #4b4b4b;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1px solid #ff5400;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.select-style, .gender {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(122, 192, 0, 0.15);
+}
+
+input.birthday {
+  width: 60px;
+}
+
+input.birthyear {
+  width: 120px;
+}
+
+.buttom {
+  background-color: #010304;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttom:hover {
+  background-color: #333;
+}
+
+ 
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
